@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lcq-4f-h3Q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwipeNavigation_vea_software" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ig-So-zMa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Ig-So-zMa" secondAttribute="trailing" id="DH6-Ra-2PC"/>
+                            <constraint firstItem="8Ig-So-zMa" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Ibr-IM-QI9"/>
+                            <constraint firstItem="8Ig-So-zMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o26-6j-kev"/>
+                            <constraint firstItem="8Ig-So-zMa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ojc-fn-BoE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swipe" id="8Ds-qD-Kgd"/>
+                    <connections>
+                        <outlet property="scrollView" destination="8Ig-So-zMa" id="yop-Ee-A97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="490"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="czo-dA-leT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lcq-4f-h3Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A4e-vT-anI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t8B-dk-EHx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2h0-47-EZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="1150"/>
+        </scene>
+    </scenes>
+</document>
